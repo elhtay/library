@@ -1,0 +1,45 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Spring Boot App",
+            "request": "launch",
+            "mainClass": "com.example.booklibrary.BookLibraryApplication",
+            "projectName": "book-library",
+            "args": "",
+            "vmArgs": "-Dspring.profiles.active=dev",
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "java",
+            "name": "Debug Spring Boot App",
+            "request": "launch",
+            "mainClass": "com.example.booklibrary.BookLibraryApplication",
+            "projectName": "book-library",
+            "args": "",
+            "vmArgs": "-Dspring.profiles.active=dev -Xdebug",
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "stopOnEntry": false,
+            "stepFilters": {
+                "skipClasses": [
+                    "java.*",
+                    "javax.*",
+                    "com.sun.*",
+                    "sun.*",
+                    "org.springframework.*"
+                ],
+                "skipSynthetics": true
+            }
+        },
+        {
+            "type": "java",
+            "name": "Debug Current File",
+            "request": "launch",
+            "mainClass": "${file}",
+            "console": "internalConsole"
+        }
+    ]
+}

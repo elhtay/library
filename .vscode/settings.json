@@ -1,0 +1,25 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.debug.settings.enableRunDebugCodeLens": true,
+    "java.debug.settings.showHex": false,
+    "java.debug.settings.showStaticVariables": true,
+    "java.debug.settings.showQualifiedNames": false,
+    "java.debug.settings.maxStringLength": 0,
+    "java.debug.logLevel": "warn",
+    "java.test.config": {
+        "name": "bookLibraryTests",
+        "workingDirectory": "${workspaceFolder}",
+        "vmArgs": [
+            "-Dspring.profiles.active=test"
+        ]
+    },
+    "spring-boot.ls.problem.application-properties.enabled": true,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "explorer.autoReveal": true,
+    "java.debug.settings.onBuildFailureProceed": true
+}
